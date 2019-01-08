@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]">
+  <test name="Login(failed)">
+    <classes>
+      <class name="Create_Show.Login">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="reportTestResult"/>
+          <include name="testcase_Login"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Create_Show.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

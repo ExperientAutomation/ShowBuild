@@ -1,0 +1,717 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>90/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 18 08:55:52 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1744 seconds (1744328 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Configure_Show.ConfigureExhibitors.D_Add_Exhibitor()'><b>D_Add_Exhibitor</b><br>Test class: Configure_Show.ConfigureExhibitors</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at Configure_Show.ConfigureExhibitors.B_Add_Exhibitor(ConfigureExhibitors.java:85)
+	at Configure_Show.ConfigureExhibitors.D_Add_Exhibitor(ConfigureExhibitors.java:181)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1747053097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1747053097'><pre>java.lang.ArrayIndexOutOfBoundsException: 1
+	at Configure_Show.ConfigureExhibitors.B_Add_Exhibitor(ConfigureExhibitors.java:85)
+	at Configure_Show.ConfigureExhibitors.D_Add_Exhibitor(ConfigureExhibitors.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Configure_Show.ConfigureExhibitors@39c0f4a</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.E_ShowItemSUBTree()'><b>E_ShowItemSUBTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: MON1, Monday Morning Sessions</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;MONDAY&apos;)]&quot;}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir7672_4516}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2f358651868a03fce10eac30cf5c2393
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;MONDAY&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Configure_Show.ConfigureShowItems.E_ShowItemSUBTree(ConfigureShowItems.java:257)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1048712791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048712791'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;MONDAY&apos;)]&quot;}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir7672_4516}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2f358651868a03fce10eac30cf5c2393
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;MONDAY&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Configure_Show.ConfigureShowItems.E_ShowItemSUBTree(ConfigureShowItems.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: MONDAY, MON1, 12/16/18, OFC1, An Overview of Final Cut Pro 7, SES, Y, Y, 0, 1, 10:00 AM, 11:30 AM, Abba Shapiro, Paul Reed Smith, 150.00, 200.00, 250.00</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;MON1&apos;]&quot;}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir7672_4516}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2f358651868a03fce10eac30cf5c2393
+*** Element info: {Using=xpath, value=//a[text()=&apos;MON1&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Configure_Show.ConfigureShowItems.F_AddShowItems(ConfigureShowItems.java:304)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace307488715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307488715'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;MON1&apos;]&quot;}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir7672_4516}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.79, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2f358651868a03fce10eac30cf5c2393
+*** Element info: {Using=xpath, value=//a[text()=&apos;MON1&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at Configure_Show.ConfigureShowItems.F_AddShowItems(ConfigureShowItems.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>61</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Configure_Show.DemographicQuestions.A_Demographics()'><b>A_Demographics</b><br>Test class: Configure_Show.DemographicQuestions</td>
+<td></td>
+<td>65</td>
+<td>Configure_Show.DemographicQuestions@685cb137</td></tr>
+<tr>
+<td title='Configure_Show.DemographicAnswers.A_Demographics()'><b>A_Demographics</b><br>Test class: Configure_Show.DemographicAnswers</td>
+<td></td>
+<td>62</td>
+<td>Configure_Show.DemographicAnswers@6a41eaa2</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureFieldConfig.A_FieldConfig()'><b>A_FieldConfig</b><br>Test class: Configure_Show.ConfigureFieldConfig</td>
+<td></td>
+<td>63</td>
+<td>Configure_Show.ConfigureFieldConfig@7cd62f43</td></tr>
+<tr>
+<td title='Configure_Show.HTML_Production_Config.A_HTMLProdConfig()'><b>A_HTMLProdConfig</b><br>Test class: Configure_Show.HTML_Production_Config</td>
+<td></td>
+<td>62</td>
+<td>Configure_Show.HTML_Production_Config@6d4b1c02</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.A_LoginAndFocus()'><b>A_LoginAndFocus</b><br>Test class: Configure_Show.ConfigureShowItems</td>
+<td></td>
+<td>62</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureTracks.A_LoginAndFocus()'><b>A_LoginAndFocus</b><br>Test class: Configure_Show.ConfigureTracks</td>
+<td></td>
+<td>62</td>
+<td>Configure_Show.ConfigureTracks@4883b407</td></tr>
+<tr>
+<td title='Configure_Show.ConfigurePackages.A_LoginAndFocus()'><b>A_LoginAndFocus</b><br>Test class: Configure_Show.ConfigurePackages</td>
+<td></td>
+<td>63</td>
+<td>Configure_Show.ConfigurePackages@7d9d1a19</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureExhibitors.A_LoginAndFocus()'><b>A_LoginAndFocus</b><br>Test class: Configure_Show.ConfigureExhibitors</td>
+<td></td>
+<td>62</td>
+<td>Configure_Show.ConfigureExhibitors@39c0f4a</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>9</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Configure_Show.ConfigureSpeakers</td>
+<td></td>
+<td>63</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureRegtypeExt.A_RegtypeExt()'><b>A_RegtypeExt</b><br>Test class: Configure_Show.ConfigureRegtypeExt</td>
+<td></td>
+<td>114</td>
+<td>Configure_Show.ConfigureRegtypeExt@6a4f787b</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Moran, J, Cerf, , , , Program Chair, American Film Institute, 300 Madison Ave # 32117.1, , New York, NY, 10017-6232, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>7</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Tricia, , Brock, Dr., , , , Grips and Trips, 3700 O St NW, G-05 Maguire, Washington, DC, 20057-0003, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>6</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Abba, , Shapiro, , , PhD, , Productions Unlimited, 2 Giralda Farms, , Madison, NJ, 07940, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>7</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Bogdan, , Marcu, , , , , Special FX, Av. Dr. Cardoso de Melo 1491, , Sao Paulo, , 04548-005, Brazil, 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Robert, K, Mandel, , Jr., , , American Film Institute, 19 Forest Parkway, , Los Angeles, CA, 90009, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Peter, , Markham, , , , President, Billy Montrose Foundation, 1 CA Plaza, , Islandia, NY, 11749, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>6</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Dom, L, Cambern, , , MFA, , American Film Institute, 1000 US Highway 202  Rm G168, , Raritan, NJ, 08869-1498, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Mako, , Kamitsuna, , , , , SUNY, Fl 39, 1251 Avenue of the Americas, , New York, NY, 10020-1104, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Karen, , Maruyama, , , , , American Film Institute, 111 Hyde Rd, , Farmington, CT, 06032-2851, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Joe, , Petricca, , , , , SUNY, 444 Park Ave S Fl 10, , New York, NY, 10016-7321, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Farrel, , Levy, , , , , Penn State University, 446 Blue Course Dr. # 701, , State College, PA, 16803, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Betsy, , Pollock, , , , Adjunct Professor, American Film Institute, 19 Forest Parkway, , Los Angeles, CA, 90009, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>7</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Trisha, R, Gum, , , , , Productions Unlimited, Seroe Blanco Z/N, , Oranjestad, , , Aruba, 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>20</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Christine, P, Steele, , , , , Sony, GCT 7 B Hall, 25 Vanderbilt Ave, New York, NY, 10017, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Joe, , Pichirallo, , , , , American Film Institute, 19 Forest Parkway, , Los Angeles, CA, 90009, , 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureSpeakers.B_AddSpeakers()'><b>B_AddSpeakers</b><br>Test class: Configure_Show.ConfigureSpeakers<br>Parameters: Yes, Tom, , Rickman, , , , , American Film Institute, Level 30, 275 Kent St, Sydney, , 2000, Australia, 8005551212, speaker@experienttest.com</td>
+<td></td>
+<td>5</td>
+<td>Configure_Show.ConfigureSpeakers@6093dd95</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureExhibitors.B_Add_Exhibitor()'><b>B_Add_Exhibitor</b><br>Test class: Configure_Show.ConfigureExhibitors</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureExhibitors@39c0f4a</td></tr>
+<tr>
+<td title='Configure_Show.ConfigurePackages.B_Add_Packages()'><b>B_Add_Packages</b><br>Test class: Configure_Show.ConfigurePackages</td>
+<td></td>
+<td>21</td>
+<td>Configure_Show.ConfigurePackages@7d9d1a19</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureTracks.B_Add_Tracks()'><b>B_Add_Tracks</b><br>Test class: Configure_Show.ConfigureTracks<br>Parameters: Educational Screening Program: Billy Wilder, ESP, ESP1, ESP2, ESP3, ESP4</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureTracks@4883b407</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureTracks.B_Add_Tracks()'><b>B_Add_Tracks</b><br>Test class: Configure_Show.ConfigureTracks<br>Parameters: Creating a Documentary - An Introduction, CAD, A1, A2, A3, A4, A5, B, C, D</td>
+<td></td>
+<td>4</td>
+<td>Configure_Show.ConfigureTracks@4883b407</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureTracks.B_Add_Tracks()'><b>B_Add_Tracks</b><br>Test class: Configure_Show.ConfigureTracks<br>Parameters: Directors Workshop for Women, DWW, DWW</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureTracks@4883b407</td></tr>
+<tr>
+<td title='Configure_Show.DemographicAnswers.B_Config_DemographicsAnswers()'><b>B_Config_DemographicsAnswers</b><br>Test class: Configure_Show.DemographicAnswers</td>
+<td></td>
+<td>54</td>
+<td>Configure_Show.DemographicAnswers@6a41eaa2</td></tr>
+<tr>
+<td title='Configure_Show.DemographicQuestions.B_Config_DemographicsQuestions()'><b>B_Config_DemographicsQuestions</b><br>Test class: Configure_Show.DemographicQuestions</td>
+<td></td>
+<td>37</td>
+<td>Configure_Show.DemographicQuestions@685cb137</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureFieldConfig.B_Config_LeadConfig()'><b>B_Config_LeadConfig</b><br>Test class: Configure_Show.ConfigureFieldConfig</td>
+<td></td>
+<td>12</td>
+<td>Configure_Show.ConfigureFieldConfig@7cd62f43</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureRegtypeExt.B_Config_RegType()'><b>B_Config_RegType</b><br>Test class: Configure_Show.ConfigureRegtypeExt</td>
+<td></td>
+<td>9</td>
+<td>Configure_Show.ConfigureRegtypeExt@6a4f787b</td></tr>
+<tr>
+<td title='Configure_Show.HTML_Production_Config.B_ConfigureAttendeeConfirmation()'><b>B_ConfigureAttendeeConfirmation</b><br>Test class: Configure_Show.HTML_Production_Config</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.HTML_Production_Config@6d4b1c02</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.B_RegistrationFees()'><b>B_RegistrationFees</b><br>Test class: Configure_Show.ConfigureShowItems</td>
+<td></td>
+<td>49</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.B_Status()'><b>B_Status</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>1</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.C_CancellationFees()'><b>C_CancellationFees</b><br>Test class: Configure_Show.ConfigureShowItems</td>
+<td></td>
+<td>50</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.C_ConfigureDateStatuses()'><b>C_ConfigureDateStatuses</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.HTML_Production_Config.C_ConfigureExhibitorConfirmation()'><b>C_ConfigureExhibitorConfirmation</b><br>Test class: Configure_Show.HTML_Production_Config</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.HTML_Production_Config@6d4b1c02</td></tr>
+<tr>
+<td title='Configure_Show.DemographicQuestions.C_CreateDemographicsQuestions()'><b>C_CreateDemographicsQuestions</b><br>Test class: Configure_Show.DemographicQuestions</td>
+<td></td>
+<td>115</td>
+<td>Configure_Show.DemographicQuestions@685cb137</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureExhibitors.C_LoginAndFocus()'><b>C_LoginAndFocus</b><br>Test class: Configure_Show.ConfigureExhibitors</td>
+<td></td>
+<td>6</td>
+<td>Configure_Show.ConfigureExhibitors@39c0f4a</td></tr>
+<tr>
+<td title='Configure_Show.HTML_Production_Config.D_ConfigureInviteFriend()'><b>D_ConfigureInviteFriend</b><br>Test class: Configure_Show.HTML_Production_Config</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.HTML_Production_Config@6d4b1c02</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.D_DateStatus()'><b>D_DateStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: ADV, Advance, 9/4/18, 3:01 AM, 10/18/18, 3:00 AM</td>
+<td></td>
+<td>4</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.D_DateStatus()'><b>D_DateStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: ONS, Onsite, 11/18/18, 3:01 AM, 12/18/18, 3:00 AM</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.D_DateStatus()'><b>D_DateStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: EARLY, Early Bird, 10/18/18, 3:01 AM, 11/18/18, 3:00 AM</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: MONDAY, Monday Sessions</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, Tuesday Sessions</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: WEDNESDAY, Wednesday Sessions</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, Creating a Documentary - An Introduction</td>
+<td></td>
+<td>4</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: ESP, Educational Screening Program: Billy Wilder</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: SOCIAL, Social Events</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.D_ShowItemTree()'><b>D_ShowItemTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: GUEST, Guest Registration</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.E_ConfigureMembershipStatuses()'><b>E_ConfigureMembershipStatuses</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>0</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.E_ShowItemSUBTree()'><b>E_ShowItemSUBTree</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: MON2, Monday Afternoon Sessions</td>
+<td></td>
+<td>4</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: GUEST, , , GUEST, Guest, GUE, N, N, 0, 0, , , , , 25.00, 25.00, 25.00</td>
+<td></td>
+<td>12</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: SOCIAL, , 12/17/18, REC, Reception at Angels & Kings Chicago, ACT, N, N, 0, 5, 6:00 PM, 11:00 PM, , Angels & Kings Chicago, 0.00, 0.00, 0.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/16/18, A1, Basic Interview Techniques and Composition, SES, N, Y, 0, 1, 8:00 AM, 9:30 AM, Moran Cerf, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/16/18, A2, Basic Lighting, SES, Y, Y, 0, 1, 10:00 AM, 11:30 AM, Tricia Brock, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/16/18, A5, Working with Stills, Graphics and Stock Footage, SES, Y, Y, 0, 1, 1:00 PM, 2:30 PM, Joe Petricca, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>12</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/16/18, B, Hands-On Shooting of Interviews and B-Roll, SES, Y, Y, 0, 1, 3:00 PM, 5:00 PM, Bogdan Marcu, Hamer Room, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: MONDAY, MON2, 12/16/18, AFI1001, AFI's 100 Years…100 Passions, SES, N, Y, 0, 1, 3:00 PM, 4:30 PM, Robert Mandel, Alembic Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: ESP, , 12/16/18, ESP1, ESP: Billy Wilder - Sunset Boulevard, SES, N, Y, 300, 2, 7:00 PM, 11:00 PM, Peter Markham, Fender Ballroom, 75.00, 85.00, 100.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/19/18, C, Inside the Mind of a Documentary Film Editor, SES, Y, Y, 0, 1, 8:00 AM, 9:30 AM, Dom Cambern, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, MAP, Motion and Photoshop, SES, Y, Y, 0, 1, 8:00 AM, 9:30 AM, Mako Kamitsuna, Hamer Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, DWW, Directing Workshop for Women, SES, Y, Y, 0, 1, 10:00 AM, 1:00 PM, Karen Maruyama, Alembic Room, 300.00, 300.00, 300.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, 35MM, 35MM Film Techniques, SES, Y, Y, 0, 1, 10:00 AM, 12:00 PM, Joe Petricca, Hamer Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/19/18, D, The Art of the Edit, SES, Y, Y, 0, 1, 1:00 PM, 3:00 PM, Farrel Levy, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, CW, Catalyst Workshop, SES, Y, Y, 0, 1, 1:00 PM, 3:00 PM, Moran Cerf, Paul Reed Smith, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, FFP, Feature Film Packaging Workshop, SES, Y, Y, 0, 1, 1:00 PM, 3:00 PM, Betsy Pollock, Hamer Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: TUESDAY, , 12/19/18, AFI10, AFI's Top Tens, SES, Y, Y, 0, 1, 3:00 PM, 4:30 PM, Robert Mandel, Alembic Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: ESP, , 12/19/18, ESP2, ESP: Billy Wilder - Some Like It Hot, SES, Y, Y, 300, 2, 7:00 PM, 11:00 PM, Peter Markham, Fender Ballroom, 75.00, 85.00, 100.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/20/18, A3, Basic Sound Recording and Use of Microphones, SES, Y, Y, 0, 1, 8:00 AM, 9:30 AM, Trisha Gum, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: WEDNESDAY, , 12/20/18, PPS, Post-Production Sound, SES, Y, Y, 0, 1, 10:00 AM, 11:30 AM, Christine Steele, Gretsch Boardroom, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: WEDNESDAY, , 12/20/18, FMF, Festivals, Marketing and Financing the Short Film, SES, Y, Y, 0, 1, 10:00 AM, 11:30 AM, Joe Pichirallo, Hamer Room, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: WEDNESDAY, , 12/20/18, FIP, Film from the International Perspective, SES, Y, Y, 0, 1, 10:00 AM, 11:30 AM, Mako Kamitsuna, Paul Reed Smith, 150.00, 200.00, 250.00</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: SOCIAL, , 12/20/18, NET, Networking Luncheon, ACT, Y, Y, 0, 1, 11:30 AM, 2:00 PM, , Alembic Room, 0.00, 0.00, 0.00</td>
+<td></td>
+<td>13</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: ESP, , 12/20/18, ESP3, ESP: Billy Wilder - Double Indemnity, SES, N, Y, 300, 2, 2:00 PM, 5:00 PM, Tom Rickman, Fender Ballroom, 75.00, 85.00, 100.00</td>
+<td></td>
+<td>15</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: CAD, , 12/20/18, A4, Working with Talent, SES, Y, Y, 0, 1, 2:00 PM, 3:30 PM, Joe Pichirallo, Gretsch Boardroom, 50.00, 60.00, 75.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureShowItems.F_AddShowItems()'><b>F_AddShowItems</b><br>Test class: Configure_Show.ConfigureShowItems<br>Parameters: ESP, , 12/20/18, ESP4, ESP: Billy Wilder - The Apartment, SES, N, Y, 300, 2, 7:00 PM, 11:00 PM, Peter Markham, Fender Ballroom, 75.00, 85.00, 100.00</td>
+<td></td>
+<td>14</td>
+<td>Configure_Show.ConfigureShowItems@5622fdf</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.F_MembershipStatus()'><b>F_MembershipStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: M, Member</td>
+<td></td>
+<td>3</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.F_MembershipStatus()'><b>F_MembershipStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: NM, NonMember</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.G_ConfigureRegistrationStatuses()'><b>G_ConfigureRegistrationStatuses</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>1</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.H_RegistrationStatus()'><b>H_RegistrationStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: A, Attendee</td>
+<td></td>
+<td>4</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.H_RegistrationStatus()'><b>H_RegistrationStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: AC, Conference</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.H_RegistrationStatus()'><b>H_RegistrationStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: E, Exhibitor</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.H_RegistrationStatus()'><b>H_RegistrationStatus</b><br>Test class: Configure_Show.ConfigureStatuses<br>Parameters: G, Guest</td>
+<td></td>
+<td>2</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+<tr>
+<td title='Configure_Show.ConfigureStatuses.I_TearDown()'><b>I_TearDown</b><br>Test class: Configure_Show.ConfigureStatuses</td>
+<td></td>
+<td>0</td>
+<td>Configure_Show.ConfigureStatuses@604ed9f0</td></tr>
+</table><p>
+</body>
+</html>

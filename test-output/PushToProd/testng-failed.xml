@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PushToProd]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="PushToProd.PushToProd">
+        <methods>
+          <include name="B_HousingTransfer"/>
+          <include name="checkSuiteSkip"/>
+        </methods>
+      </class> <!-- PushToProd.PushToProd -->
+      <class name="PushToProd.DPConfig">
+        <methods>
+          <include name="tearDown"/>
+          <include name="LoginAndFocusShow"/>
+        </methods>
+      </class> <!-- PushToProd.DPConfig -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [PushToProd] -->

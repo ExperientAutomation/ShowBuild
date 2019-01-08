@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Config_Show]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="Configure_Show.ConfigureExhibitors">
+        <methods>
+          <include name="D_Add_Exhibitor"/>
+          <include name="checkTestSkip"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureExhibitors -->
+      <class name="Configure_Show.ConfigurePackages">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigurePackages -->
+      <class name="Configure_Show.ConfigureRegtypeExt">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="checkSuiteSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureRegtypeExt -->
+      <class name="Configure_Show.DemographicQuestions">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.DemographicQuestions -->
+      <class name="Configure_Show.DemographicAnswers">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.DemographicAnswers -->
+      <class name="Configure_Show.ConfigureSpeakers">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureSpeakers -->
+      <class name="Configure_Show.ConfigureShowItems">
+        <methods>
+          <include name="E_ShowItemSUBTree" invocation-numbers="0"/>
+          <include name="F_AddShowItems" invocation-numbers="4"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureShowItems -->
+      <class name="Configure_Show.ConfigureStatuses">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureStatuses -->
+      <class name="Configure_Show.ConfigureTracks">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Configure_Show.ConfigureTracks -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Config_Show] -->

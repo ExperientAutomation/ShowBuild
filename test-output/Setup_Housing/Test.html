@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 03 02:03:39 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>557 seconds (557099 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Setup_Housing.EventAdminDetails.B_AddEventAdminDetails()'><b>B_AddEventAdminDetails</b><br>Test class: Setup_Housing.EventAdminDetails</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir5208_30710}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ee3f1b1e3fab06b7d74907f82dc7162f
+*** Element info: {Using=xpath, value=.//option[normalize-space(.) = &quot;CC Guarantee&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:214)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:299)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:190)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at Setup_Housing.EventAdminDetails.B_AddEventAdminDetails(EventAdminDetails.java:202)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace428039780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace428039780'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;KULANDASAMYC&apos;, ip: &apos;172.17.9.18&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\KULAND~1\AppData\Local\Temp\scoped_dir5208_30710}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ee3f1b1e3fab06b7d74907f82dc7162f
+*** Element info: {Using=xpath, value=.//option[normalize-space(.) = &quot;CC Guarantee&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:214)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:299)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:190)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at Setup_Housing.EventAdminDetails.B_AddEventAdminDetails(EventAdminDetails.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>48</td>
+<td>Setup_Housing.EventAdminDetails@3bfdc050</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Setup_Housing.EventAdminDetails.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Setup_Housing.EventAdminDetails</td>
+<td></td>
+<td>19</td>
+<td>Setup_Housing.EventAdminDetails@3bfdc050</td></tr>
+<tr>
+<td title='Setup_Housing.AddHotelSetup.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Setup_Housing.AddHotelSetup</td>
+<td></td>
+<td>61</td>
+<td>Setup_Housing.AddHotelSetup@1bce4f0a</td></tr>
+<tr>
+<td title='Setup_Housing.SetupInventory.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Setup_Housing.SetupInventory</td>
+<td></td>
+<td>61</td>
+<td>Setup_Housing.SetupInventory@5e3a8624</td></tr>
+<tr>
+<td title='Setup_Housing.AddEventFacilities.A_LoginAndFocusShow()'><b>A_LoginAndFocusShow</b><br>Test class: Setup_Housing.AddEventFacilities</td>
+<td></td>
+<td>62</td>
+<td>Setup_Housing.AddEventFacilities@5c3bd550</td></tr>
+<tr>
+<td title='Setup_Housing.AddHotelSetup.B_AddConfigureHotel()'><b>B_AddConfigureHotel</b><br>Test class: Setup_Housing.AddHotelSetup<br>Parameters: Anaheim Marriott, One Bed, Two Beds, 150, 200, 250, 300, 170, 230, 270, 330</td>
+<td></td>
+<td>88</td>
+<td>Setup_Housing.AddHotelSetup@1bce4f0a</td></tr>
+<tr>
+<td title='Setup_Housing.AddHotelSetup.B_AddConfigureHotel()'><b>B_AddConfigureHotel</b><br>Test class: Setup_Housing.AddHotelSetup<br>Parameters: Regency Suites Hotel, King Bed, Queen/Queen Beds, 170, 230, 270, 330, 170, 230, 270, 330</td>
+<td></td>
+<td>78</td>
+<td>Setup_Housing.AddHotelSetup@1bce4f0a</td></tr>
+<tr>
+<td title='Setup_Housing.AddHotelSetup.B_AddConfigureHotel()'><b>B_AddConfigureHotel</b><br>Test class: Setup_Housing.AddHotelSetup<br>Parameters: Hyatt Orlando, Standard Room, Superior Room, 170, 230, 270, 330, 200, 250, 270, 350</td>
+<td></td>
+<td>75</td>
+<td>Setup_Housing.AddHotelSetup@1bce4f0a</td></tr>
+<tr>
+<td title='Setup_Housing.AddEventFacilities.B_Add_Event_Facilities()'><b>B_Add_Event_Facilities</b><br>Test class: Setup_Housing.AddEventFacilities</td>
+<td></td>
+<td>11</td>
+<td>Setup_Housing.AddEventFacilities@5c3bd550</td></tr>
+<tr>
+<td title='Setup_Housing.SetupInventory.B_inventory_Setup()'><b>B_inventory_Setup</b><br>Test class: Setup_Housing.SetupInventory</td>
+<td></td>
+<td>36</td>
+<td>Setup_Housing.SetupInventory@5e3a8624</td></tr>
+<tr>
+<td title='Setup_Housing.AddEventFacilities.C_LoginToProdAndFocusShow()'><b>C_LoginToProdAndFocusShow</b><br>Test class: Setup_Housing.AddEventFacilities</td>
+<td></td>
+<td>3</td>
+<td>Setup_Housing.AddEventFacilities@5c3bd550</td></tr>
+<tr>
+<td title='Setup_Housing.AddEventFacilities.D_AddEventFacilitiesToProd()'><b>D_AddEventFacilitiesToProd</b><br>Test class: Setup_Housing.AddEventFacilities</td>
+<td></td>
+<td>8</td>
+<td>Setup_Housing.AddEventFacilities@5c3bd550</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Setup_Housing]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="Setup_Housing.EventAdminDetails">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="B_AddEventAdminDetails"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Setup_Housing.EventAdminDetails -->
+      <class name="Setup_Housing.AddHotelSetup">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Setup_Housing.AddHotelSetup -->
+      <class name="Setup_Housing.SetupInventory">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- Setup_Housing.SetupInventory -->
+      <class name="Setup_Housing.AddEventFacilities">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Setup_Housing.AddEventFacilities -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Setup_Housing] -->

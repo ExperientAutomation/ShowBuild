@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65121" started-at="2018-09-12T07:15:13Z" finished-at="2018-09-12T07:16:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65121" started-at="2018-09-12T07:15:13Z" finished-at="2018-09-12T07:16:18Z">
+      <class name="PushToProd.B_ConfigureExhibitors">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="checkSuiteSkip" is-config="true" duration-ms="3002" started-at="2018-09-12T03:15:10Z" finished-at="2018-09-12T03:15:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="checkTestSkip" is-config="true" duration-ms="35" started-at="2018-09-12T03:15:13Z" finished-at="2018-09-12T03:15:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="A_LoginAndFocus()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="A_LoginAndFocus" duration-ms="22235" started-at="2018-09-12T03:15:13Z" finished-at="2018-09-12T03:15:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A_LoginAndFocus -->
+        <test-method status="PASS" signature="B_Add_Exhibitor()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="B_Add_Exhibitor" duration-ms="19570" started-at="2018-09-12T03:15:35Z" finished-at="2018-09-12T03:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B_Add_Exhibitor -->
+        <test-method status="PASS" signature="C_LoginAndFocus()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="C_LoginAndFocus" duration-ms="6889" started-at="2018-09-12T03:15:55Z" finished-at="2018-09-12T03:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_LoginAndFocus -->
+        <test-method status="PASS" signature="D_Add_Exhibitor()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="D_Add_Exhibitor" duration-ms="16125" started-at="2018-09-12T03:16:02Z" finished-at="2018-09-12T03:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D_Add_Exhibitor -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="tearDown" is-config="true" duration-ms="2075" started-at="2018-09-12T03:16:18Z" finished-at="2018-09-12T03:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- PushToProd.B_ConfigureExhibitors -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

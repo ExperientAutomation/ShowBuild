@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Config_Show" >
+  <test name="Test">
+    <classes>
+     
+      <class name="Configure_Show.A_ConfigureSchedules"/>
+      <class name="Configure_Show.B_ConfigureStatuses"/>
+      <class name="Configure_Show.C_ConfigureRegtypeExt"/>
+      <class name="Configure_Show.D_DemographicQuestions"/>
+      <class name="Configure_Show.E_DemographicAnswers"/>
+      <class name="Configure_Show.F_ConfigureFieldConfig"/>
+      <class name="Configure_Show.G_HTML_Production_Config"/>
+      <class name="Configure_Show.H_ConfigureSpeakers"/>
+      <class name="Configure_Show.I_ConfigureShowItems"/>
+      <class name="Configure_Show.J_ConfigureTracks"/>
+      <class name="Configure_Show.K_ConfigurePackages"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Config_Show -->
