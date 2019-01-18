@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\kulandasamyc\AppData\Local\Temp\testng-eclipse--2014476963\testng-customsuite.xml</span>
+                    <span>C:\Users\kulandasamyc\AppData\Local\Temp\testng-eclipse-949582851\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RegOnly_Show.D_DemographicQuestions" hash-for-method="C_CreateDemographicsQuestions">C_CreateDemographicsQuestions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,22 +115,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PushToProd.B_ConfigureExhibitors" hash-for-method="A_LoginAndFocus">A_LoginAndFocus</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RegOnly_Show.D_DemographicQuestions" hash-for-method="A_Demographics">A_Demographics</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PushToProd.B_ConfigureExhibitors" hash-for-method="B_Add_Exhibitor">B_Add_Exhibitor</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PushToProd.B_ConfigureExhibitors" hash-for-method="C_LoginAndFocus">C_LoginAndFocus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PushToProd.B_ConfigureExhibitors" hash-for-method="D_Add_Exhibitor">D_Add_Exhibitor</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="RegOnly_Show.D_DemographicQuestions" hash-for-method="B_Config_DemographicsQuestions">B_Config_DemographicsQuestions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,38 +135,67 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">PushToProd.B_ConfigureExhibitors</span>
+              <img src="failed.png"/>
+              <span class="class-name">RegOnly_Show.D_DemographicQuestions</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="A_LoginAndFocus">
-                  </a> <!-- A_LoginAndFocus -->
-                  <span class="method-name">A_LoginAndFocus</span>
+                  <a name="C_CreateDemographicsQuestions">
+                  </a> <!-- C_CreateDemographicsQuestions -->
+                  <span class="method-name">C_CreateDemographicsQuestions</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at RegOnly_Show.D_DemographicQuestions.C_CreateDemographicsQuestions(D_DemographicQuestions.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">RegOnly_Show.D_DemographicQuestions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_Demographics">
+                  </a> <!-- A_Demographics -->
+                  <span class="method-name">A_Demographics</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="B_Add_Exhibitor">
-                  </a> <!-- B_Add_Exhibitor -->
-                  <span class="method-name">B_Add_Exhibitor</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="C_LoginAndFocus">
-                  </a> <!-- C_LoginAndFocus -->
-                  <span class="method-name">C_LoginAndFocus</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="D_Add_Exhibitor">
-                  </a> <!-- D_Add_Exhibitor -->
-                  <span class="method-name">D_Add_Exhibitor</span>
+                  <a name="B_Config_DemographicsQuestions">
+                  </a> <!-- B_Config_DemographicsQuestions -->
+                  <span class="method-name">B_Config_DemographicsQuestions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +203,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kulandasamyc\AppData\Local\Temp\testng-eclipse--2014476963\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kulandasamyc\AppData\Local\Temp\testng-eclipse-949582851\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +212,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;PushToProd.B_ConfigureExhibitors&quot;/&gt;
+      &lt;class name=&quot;RegOnly_Show.D_DemographicQuestions&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -219,28 +252,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'A_LoginAndFocus')
-data.setCell(0, 2, 'PushToProd.B_ConfigureExhibitors')
-data.setCell(0, 3, 22235);
+data.setCell(0, 1, 'C_CreateDemographicsQuestions')
+data.setCell(0, 2, 'RegOnly_Show.D_DemographicQuestions')
+data.setCell(0, 3, 241505);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'B_Add_Exhibitor')
-data.setCell(1, 2, 'PushToProd.B_ConfigureExhibitors')
-data.setCell(1, 3, 19570);
+data.setCell(1, 1, 'B_Config_DemographicsQuestions')
+data.setCell(1, 2, 'RegOnly_Show.D_DemographicQuestions')
+data.setCell(1, 3, 37498);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'D_Add_Exhibitor')
-data.setCell(2, 2, 'PushToProd.B_ConfigureExhibitors')
-data.setCell(2, 3, 16125);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'C_LoginAndFocus')
-data.setCell(3, 2, 'PushToProd.B_ConfigureExhibitors')
-data.setCell(3, 3, 6889);
+data.setCell(2, 1, 'A_Demographics')
+data.setCell(2, 2, 'RegOnly_Show.D_DemographicQuestions')
+data.setCell(2, 3, 30840);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,35 +295,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">PushToProd.B_ConfigureExhibitors</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">RegOnly_Show.D_DemographicQuestions</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">checkSuiteSkip</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">checkTestSkip</span>
-                <span class="method-start">3025 ms</span>
+                <span class="method-start">3252 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">A_LoginAndFocus</span>
-                <span class="method-start">3286 ms</span>
+                <span class="method-name">A_Demographics</span>
+                <span class="method-start">3284 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">B_Add_Exhibitor</span>
-                <span class="method-start">25525 ms</span>
+                <span class="method-name">B_Config_DemographicsQuestions</span>
+                <span class="method-start">34124 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">C_LoginAndFocus</span>
-                <span class="method-start">45098 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">C_CreateDemographicsQuestions</span>
+                <span class="method-start">71622 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">D_Add_Exhibitor</span>
-                <span class="method-start">51990 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">68196 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

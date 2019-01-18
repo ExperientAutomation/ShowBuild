@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65121" started-at="2018-09-12T07:15:13Z" finished-at="2018-09-12T07:16:18Z">
+  <suite name="Default suite" duration-ms="309881" started-at="2019-01-18T11:56:19Z" finished-at="2019-01-18T12:01:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65121" started-at="2018-09-12T07:15:13Z" finished-at="2018-09-12T07:16:18Z">
-      <class name="PushToProd.B_ConfigureExhibitors">
-        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="checkSuiteSkip" is-config="true" duration-ms="3002" started-at="2018-09-12T03:15:10Z" finished-at="2018-09-12T03:15:13Z">
+    <test name="Default test" duration-ms="309881" started-at="2019-01-18T11:56:19Z" finished-at="2019-01-18T12:01:29Z">
+      <class name="RegOnly_Show.D_DemographicQuestions">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:RegOnly_Show.D_DemographicQuestions@61832929]" name="checkSuiteSkip" is-config="true" duration-ms="3251" started-at="2019-01-18T06:56:15Z" finished-at="2019-01-18T06:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSuiteSkip -->
-        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="checkTestSkip" is-config="true" duration-ms="35" started-at="2018-09-12T03:15:13Z" finished-at="2018-09-12T03:15:13Z">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:RegOnly_Show.D_DemographicQuestions@61832929]" name="checkTestSkip" is-config="true" duration-ms="32" started-at="2019-01-18T06:56:19Z" finished-at="2019-01-18T06:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestSkip -->
-        <test-method status="PASS" signature="A_LoginAndFocus()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="A_LoginAndFocus" duration-ms="22235" started-at="2018-09-12T03:15:13Z" finished-at="2018-09-12T03:15:35Z">
+        <test-method status="PASS" signature="A_Demographics()[pri:0, instance:RegOnly_Show.D_DemographicQuestions@61832929]" name="A_Demographics" duration-ms="30840" started-at="2019-01-18T06:56:19Z" finished-at="2019-01-18T06:56:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_LoginAndFocus -->
-        <test-method status="PASS" signature="B_Add_Exhibitor()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="B_Add_Exhibitor" duration-ms="19570" started-at="2018-09-12T03:15:35Z" finished-at="2018-09-12T03:15:55Z">
+        </test-method> <!-- A_Demographics -->
+        <test-method status="PASS" signature="B_Config_DemographicsQuestions()[pri:0, instance:RegOnly_Show.D_DemographicQuestions@61832929]" name="B_Config_DemographicsQuestions" duration-ms="37498" started-at="2019-01-18T06:56:50Z" finished-at="2019-01-18T06:57:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- B_Add_Exhibitor -->
-        <test-method status="PASS" signature="C_LoginAndFocus()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="C_LoginAndFocus" duration-ms="6889" started-at="2018-09-12T03:15:55Z" finished-at="2018-09-12T03:16:02Z">
+        </test-method> <!-- B_Config_DemographicsQuestions -->
+        <test-method status="FAIL" signature="C_CreateDemographicsQuestions()[pri:0, instance:RegOnly_Show.D_DemographicQuestions@61832929]" name="C_CreateDemographicsQuestions" duration-ms="241505" started-at="2019-01-18T06:57:27Z" finished-at="2019-01-18T07:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RegOnly_Show.D_DemographicQuestions.C_CreateDemographicsQuestions(D_DemographicQuestions.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C_LoginAndFocus -->
-        <test-method status="PASS" signature="D_Add_Exhibitor()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="D_Add_Exhibitor" duration-ms="16125" started-at="2018-09-12T03:16:02Z" finished-at="2018-09-12T03:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_Add_Exhibitor -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:PushToProd.B_ConfigureExhibitors@68c4039c]" name="tearDown" is-config="true" duration-ms="2075" started-at="2018-09-12T03:16:18Z" finished-at="2018-09-12T03:16:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- PushToProd.B_ConfigureExhibitors -->
+        </test-method> <!-- C_CreateDemographicsQuestions -->
+      </class> <!-- RegOnly_Show.D_DemographicQuestions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

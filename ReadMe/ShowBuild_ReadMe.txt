@@ -1,8 +1,10 @@
 ****Change Inventory and ShowEvents dates****
 
 1. ShowBuild -> Src -> Showbuild -> xls -> 'B Suite.xlsx'
+2. Change dates in Sheet 'ConfigureSchedules' &  'ShowItemInput'
 
-2. Change dates in Sheet 'ConfigureSchedules' 
+3. ShowBuild -> Src -> Showbuild -> xls -> 'C Suite.xlsx'
+4. Change date in Sheet 'EventAdminDetails'
 
 ------------------------------------------------------
 **** Change ShowCode and Environment ****
@@ -34,6 +36,5 @@ Setup Housing
 Push to Prod
 4. ShowBuild -> Src -> PushToProd -> execute from 'A_' to 'C_'.
 
-Configure Housing Only show
 
 

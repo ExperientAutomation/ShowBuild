@@ -114,7 +114,7 @@ public class A_ConfigureSchedules extends TestSuiteBase {
 		driver.findElement(By.xpath("//*[@id='ButtonControl__ButtonSave']")).click();
 		driver.findElement(By.xpath("//*[@id='ButtonControl__ButtonClose']")).click();
 		driver.switchTo().window(firstWindow);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
 	}
 
 	@Test()
@@ -136,6 +136,8 @@ public class A_ConfigureSchedules extends TestSuiteBase {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		}
 
+		String endDate = suiteBxls.getCellData("ConfigureSchedules", 3, 2);
+		
 		Select dropdownStype = new Select(
 		driver.findElement(By.xpath("//*[@id='BusinessClassBindableDropDownListScheduleType']")));
 		dropdownStype.selectByVisibleText("Onsite Registration Start/End Dates");
@@ -144,9 +146,9 @@ public class A_ConfigureSchedules extends TestSuiteBase {
 		driver.findElement(By.xpath("//*[@id='TextBoxBeginTimeOnly']")).clear();
 		driver.findElement(By.xpath("//*[@id='TextBoxBeginTimeOnly']")).sendKeys(currentTime);
 		driver.findElement(By.xpath("//*[@id='TextBoxEndDateOnly']")).clear();
-		driver.findElement(By.xpath("//*[@id='TextBoxEndDateOnly']")).sendKeys("12/23/2018");
+		driver.findElement(By.xpath("//*[@id='TextBoxEndDateOnly']")).sendKeys(endDate);
 		driver.findElement(By.xpath("//*[@id='TextBoxEndTimeOnly']")).clear();
-		driver.findElement(By.xpath("//*[@id='TextBoxEndTimeOnly']")).sendKeys("12:00 AM");
+		driver.findElement(By.xpath("//*[@id='TextBoxEndTimeOnly']")).sendKeys("05:00 PM");
 		driver.findElement(By.xpath("//*[@id='ButtonControl__ButtonSave']")).click();
 		driver.findElement(By.xpath("//*[@id='ButtonControl__ButtonClose']")).click();
 

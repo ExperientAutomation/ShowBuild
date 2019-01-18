@@ -34,10 +34,10 @@ public class TestBase {
 		CONFIG.load(ip);
 		
 		// If we have one more config file then below script is used. (not using this script )
-		OR = new Properties();
-		ip = new FileInputStream(System.getProperty("user.dir")+"//src//showbuild//config//OR.properties");
-		OR.load(ip);
-		
+//		OR = new Properties();
+//		ip = new FileInputStream(System.getProperty("user.dir")+"//src//showbuild//config//OR.properties");
+//		OR.load(ip);
+//		
 		//credentails
 		CREDENTAIL = new Properties();
 		FileInputStream creip = new FileInputStream("N:\\QA\\R&DQA\\Selenium\\GlobalCredentials\\LoginCredentials.properties");

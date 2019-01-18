@@ -203,7 +203,8 @@ public class A_EventAdminDetails extends TestSuiteBase {
 		// Block/SubBlock
 
 		sel = new Select(driver.findElement(By.id("BusinessclassbindabledropdownlistDeposit")));
-		sel.selectByVisibleText("CC Guarantee");
+		sel.selectByIndex(2); 
+//		.selectByVisibleText("CC Guarantee");
 
 		driver.findElement(By.id("ckbWaitlisting")).click();
 		driver.findElement(By.id("ckInvenShare")).click();
