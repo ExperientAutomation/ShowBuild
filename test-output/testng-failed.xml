@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RegOnly_Show.D_DemographicQuestions">
+      <class name="RegOnly_Show_1.G_HTML_Production_Config">
         <methods>
-          <include name="C_CreateDemographicsQuestions"/>
+          <include name="C_ConfigureExhibitorConfirmation"/>
           <include name="checkSuiteSkip"/>
-          <include name="checkTestSkip"/>
+          <include name="B_ConfigureAttendeeConfirmation"/>
+          <include name="D_ConfigureInviteFriend"/>
         </methods>
-      </class> <!-- RegOnly_Show.D_DemographicQuestions -->
+      </class> <!-- RegOnly_Show_1.G_HTML_Production_Config -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

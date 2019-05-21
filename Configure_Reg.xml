@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="RegOnly_Show_1.A_ConfigureSchedules"/>
+      <class name="RegOnly_Show_1.F_ConfigureFieldConfig"/>
+      <class name="RegOnly_Show_1.E_DemographicAnswers"/>
+      <class name="RegOnly_Show_1.K_ConfigurePackages"/>
+      <class name="RegOnly_Show_1.I_ConfigureShowItems"/>
+      <class name="RegOnly_Show_1.G_HTML_Production_Config"/>
+      <class name="RegOnly_Show_1.C_ConfigureRegtypeExt"/>
+      <class name="RegOnly_Show_1.B_ConfigureStatuses"/>
+      <class name="RegOnly_Show_1.D_DemographicQuestions"/>
+      <class name="RegOnly_Show_1.J_ConfigureTracks"/>
+      <class name="RegOnly_Show_1.H_ConfigureSpeakers"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
