@@ -39,7 +39,7 @@ public class A_PushToProd extends TestSuiteBase {
 	
 //	Show Transfer Utility
 	@Test()
-	public void AA_PushEverythingElse() {
+	public void A_PushEverythingElse() {
 		StackTraceElement[] stacktrace = Thread.currentThread().getStackTrace();
 		StackTraceElement e = stacktrace[1];
 		String methodName=e.getMethodName();
@@ -59,7 +59,7 @@ public class A_PushToProd extends TestSuiteBase {
 		driver.findElement(By.id("chkGLAccounts")).click();
 		driver.findElement(By.id("chkCredentials")).click();
 		driver.findElement(By.id("chkRegConfigValidators")).click();
-		driver.findElement(By.id("chkCssFiles")).click();
+//		driver.findElement(By.id("chkCssFiles")).click();
 		driver.findElement(By.id("chkShowSetupWizard")).click();
 
 		// check all the checkboxes from the Extended Tables

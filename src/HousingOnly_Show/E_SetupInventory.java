@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Create_Show.Login;
-import Setup_Housing_2.TestSuiteBase;
 import showbuild.util.BrowserFactory;
 import showbuild.util.TestUtil;
 import showbuild.util.WinUtils;
@@ -31,9 +30,9 @@ public class E_SetupInventory extends TestSuiteBase {
 	@BeforeClass
 	public void checkTestSkip() {
 
-		if (!TestUtil.isTestCaseRunnable(suiteCxls, this.getClass().getSimpleName())) {
-			APP_LOGS.debug("Skipping Test Case" + this.getClass().getSimpleName() + " as runmode set to NO");// logs
-			throw new SkipException("Skipping Test Case" + this.getClass().getSimpleName() + " as runmode set to NO");// reports
+		if (!TestUtil.isTestCaseRunnable(suiteCxls, "SetupInventory")) {
+			APP_LOGS.debug("Skipping Test Case" + "SetupInventory" + " as runmode set to NO");// logs
+			throw new SkipException("Skipping Test Case" + "SetupInventory" + " as runmode set to NO");// reports
 		}
 	}
 

@@ -14,7 +14,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Create_Show.Login;
-import Setup_Housing_2.TestSuiteBase;
 import showbuild.util.BrowserFactory;
 import showbuild.util.TestUtil;
 import showbuild.util.WinUtils;
@@ -33,9 +32,9 @@ public class D_AddHotelSetup extends TestSuiteBase {
 	@BeforeClass
 	public void checkTestSkip() {
 
-		if (!TestUtil.isTestCaseRunnable(suiteCxls, this.getClass().getSimpleName())) {
-			APP_LOGS.debug("Skipping Test Case" + this.getClass().getSimpleName() + " as runmode set to NO");// logs
-			throw new SkipException("Skipping Test Case" + this.getClass().getSimpleName() + " as runmode set to NO");// reports
+		if (!TestUtil.isTestCaseRunnable(suiteCxls, "AddHotelSetup")) {
+			APP_LOGS.debug("Skipping Test Case" + "AddHotelSetup" + " as runmode set to NO");// logs
+			throw new SkipException("Skipping Test Case" + "AddHotelSetup" + " as runmode set to NO");// reports
 		}
 	}
 
@@ -404,7 +403,7 @@ public class D_AddHotelSetup extends TestSuiteBase {
 	
 	@DataProvider
 	public Object[][] getTestData() {
-		return TestUtil.getData(suiteCxls, this.getClass().getSimpleName());
+		return TestUtil.getData(suiteCxls, "AddHotelSetup");
 	}
 	
 }

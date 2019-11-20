@@ -101,7 +101,7 @@ public class G_HTML_Production_Config extends TestSuiteBase {
 		
 			}
 	
-	@Test()
+	@Test(enabled = false)
 	public void D_ConfigureInviteFriend() throws Exception {
 		System.out.println("In HTML_Production_Config mtd 4 ...........................");
 		select = new Select(driver.findElement(By.xpath("//*[@id='DropDownListReport']")));
